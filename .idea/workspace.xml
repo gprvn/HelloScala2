@@ -4,30 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b685c3-c654-48d7-bea7-4df944b74e1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_10_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/HelloScala2-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/HelloScala2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chap01.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/_01LearningBasics/Interactive01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/_01LearningBasics/helloInteractive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/_01LearningBasics/interactive02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/_01LearningBasics/mathInteractive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/_02Variables/Variables.scala" afterDir="false" />
+    <list default="true" id="33b685c3-c654-48d7-bea7-4df944b74e1b" name="Changes" comment="variables and string interpolation in Scala">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_03ControlStructure/ControlStructure.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_04OOPDomainModeling/_01traitsInScala/Cat.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_04OOPDomainModeling/_01traitsInScala/Dog.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_04OOPDomainModeling/_01traitsInScala/Runner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_04OOPDomainModeling/_01traitsInScala/Speaker.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_04OOPDomainModeling/_01traitsInScala/TailWagger.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/_04OOPDomainModeling/_02ClassesInScala/Person.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/_02Variables/Variables.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/_02Variables/Variables.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +33,7 @@
       <list>
         <option value="Scala Worksheet" />
         <option value="Scala Object" />
+        <option value="Scala Trait" />
       </list>
     </option>
   </component>
@@ -71,13 +58,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.main">
-    <configuration name="Interactive01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_01LearningBasics.Interactive01" />
+  <component name="RunManager" selected="Application._04OOPDomainModeling._02ClassesInScala.main">
+    <configuration name="ATest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_02Variables.ATest" />
       <module name="HelloScala2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_01LearningBasics.*" />
+          <option name="PATTERN" value="_02Variables.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_01Learning.mathInteractive" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_01LearningBasics.mathInteractive" />
+    <configuration name="_03ControlStructure.main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_03ControlStructure.main" />
       <module name="HelloScala2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_01LearningBasics.*" />
+          <option name="PATTERN" value="_03ControlStructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +85,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="interactive02" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="_01LearningBasics.interactive02" />
+    <configuration name="_04OOPDomainModeling._02ClassesInScala.main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_04OOPDomainModeling._02ClassesInScala.main" />
       <module name="HelloScala2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_01LearningBasics.*" />
+          <option name="PATTERN" value="_04OOPDomainModeling._02ClassesInScala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_04OOPDomainModeling.main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="_04OOPDomainModeling.main" />
+      <module name="HelloScala2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_04OOPDomainModeling._01traitsInScala.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,20 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mathInteractive" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="mathInteractive" />
-      <module name="HelloScala2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._04OOPDomainModeling._02ClassesInScala.main" />
+        <item itemvalue="Application._04OOPDomainModeling.main" />
+        <item itemvalue="Application._03ControlStructure.main" />
+        <item itemvalue="Application.ATest" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.interactive02" />
-        <item itemvalue="Application.Interactive01" />
-        <item itemvalue="Application._01Learning.mathInteractive" />
-        <item itemvalue="Application.mathInteractive" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +143,28 @@
       <option name="presentableId" value="Default" />
       <updated>1687944205513</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1688435391438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688435391438</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Revision of Scala main method creation">
+      <created>1688436651398</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688436651398</updated>
+    </task>
+    <task id="LOCAL-00003" summary="variables and string interpolation in Scala">
+      <created>1688436680553</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688436680553</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,5 +177,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Revision of Scala main method creation" />
+    <MESSAGE value="variables and string interpolation in Scala" />
+    <option name="LAST_COMMIT_MESSAGE" value="variables and string interpolation in Scala" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/_03ControlStructure/ControlStructure.scala</url>
+          <line>119</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HelloScala2$_03ControlStructure_main.ic" NAME="_03ControlStructure.main Coverage Results" MODIFIED="1688450012575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>_03ControlStructure.*</FILTER>
+    </SUITE>
   </component>
 </project>
