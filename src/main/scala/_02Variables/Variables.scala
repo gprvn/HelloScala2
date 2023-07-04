@@ -32,6 +32,8 @@ class Variables {
          programming in a typed setting."""
     println(quote)
   }
+
+
 }
 
 object main {
